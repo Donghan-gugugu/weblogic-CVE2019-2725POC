@@ -1,0 +1,17 @@
+
+###  两个文件  ###
+
+host_collection.py 是爬取fofa weblogic网站的  需要在文件第22行的地方放上自己登录过fofa每次请求头里的Cookie
+
+运行文件需要两个参数空格隔开   格式如下：
+	
+语法：	python    host_collection.py      JP   	   6
+
+参数解释：		              国家    	爬取页数
+
+#######     非会员最多爬取 6 页  每页10条    #######
+
+
+jaden_poc.py 是检验网站是否存在漏洞  需要一个参数 就是 host_collection.py文件在本地生成的 txt文件
+
+格式 ：   python  jaden_poc.py  xxxx.txt
